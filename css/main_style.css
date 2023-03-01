@@ -1,0 +1,156 @@
+@charset "utf-8";
+body,section,div,h1,ul,li,p,button{
+    margin: 0; padding: 0;
+}
+ul{
+    list-style: none;
+}
+html,body{
+    width: 100%; height: 100%;
+}
+section{
+    width: 100%; height: 100%;
+}
+.note{
+    background: url("../images/PPP.jpg") no-repeat; background-size: cover;
+    overflow: hidden; position: relative;
+}
+.note>.box{
+    width: 350px; height: 498px; background: rgba(16, 15, 15, 0.5);
+    position: absolute; left: 50%; top: 100px; transform: translate(-50%);
+}
+.note>.box>h1{
+    color: #fff; text-align: center; margin: 24px 0 20px 0;
+}
+.note>.box>ul{
+    margin: 0 auto;
+    display: flex; flex-direction: row; justify-content: space-around;
+}
+.note>.box>ul>li:nth-child(1){
+    width: 100px; height: 94px;
+    background: url("../images/s_open1.png") no-repeat;
+    text-indent: -9999px;
+}
+.note>.box>ul>li:nth-child(2){
+    width: 102px; height: 94px; 
+    background: url("../images/s_open2.png") no-repeat;
+    text-indent: -9999px;
+}
+.note>.box>ul>li:nth-child(3){
+    width: 88px; height: 84px;
+    background: url("../images/s_open3.png") no-repeat;
+    text-indent: -9999px; margin-top: 4px;
+}
+.note>.box>p{
+    font-size: 14px; margin: 35px 0 0 20px;  color: #fff;
+    
+}
+.note>.box>.start{
+    width: 200px; height: 53px;
+    background: url("../images/start_logo.png") no-repeat;
+    text-indent: -9999px; border: 0;
+    position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%);
+}
+
+.play{
+    background: url("../images/gh.png") no-repeat; background-size: cover;
+    overflow: hidden; position: relative;
+    display: none;
+}
+.play>p{
+    margin: 20px 0 0 30px;
+}
+.play>p:last-of-type{
+    margin-top: 0;
+}
+.play>.time{
+    width: 93px; height: 38px;
+    background: url("../images/time.png") no-repeat;
+    color: #f5ec23; font-size: 28px; font-weight: bold;
+    line-height: 22px;
+    /* margin: 30px 0 0 30px; */
+    padding-left: 90px;
+}
+.play>.score{
+    width: 120px; height: 26px;
+    background: url("../images/score.png") no-repeat;
+    color: #f5ec23; font-size: 28px; font-weight: bold;
+    text-indent: 108px; line-height: 20px;
+    /* margin-left: 30px; */
+}
+.play>.home{
+    width: 36px; height: 31px;
+    background: url("../images/home.png") no-repeat; text-indent: -9999px;
+    position: absolute; top: 10px; right: 10px; border: 0;
+}
+.play>.play_area{
+    display: flex; 
+    flex-flow: row wrap; justify-content: space-around;
+    align-content: space-around;
+    height: calc(100% - 384px);
+    margin-top: 14px;
+
+}
+.play>.play_area>div{
+    width: 93px; height: 74px; background: url("../images/s_box.png") no-repeat;
+    
+}
+.play>.play_area>div>.gugu{
+    width: 100%; height: 80%; overflow: hidden;
+    margin-left: 4px; position: relative; bottom: 34px;
+}
+.play>.play_area>div>.gugu>img{
+    position: absolute; bottom: -74px; display: block; transition: all .3s;
+}
+.play>.play_area>.c7>.gugu>img{
+    display: block; padding-left: 3px;
+}
+.play>.play_area>div>.gugu>img.active{
+    bottom: -15px;
+}
+
+.play>ul{
+    display: flex; flex-direction: row; justify-content: space-around;
+    margin-top: 185px;
+}
+.play>ul>li:nth-child(1){
+    width: 100px; height: 94px;
+    background: url("../images/s_open1.png") no-repeat;
+    text-indent: -9999px;
+}
+.play>ul>li:nth-child(2){
+    width: 102px; height: 94px;
+    background: url("../images/s_open2.png") no-repeat;
+    text-indent: -9999px;
+}
+.play>ul>li:nth-child(3){
+    width: 88px; height: 84px;
+    background: url("../images/s_open3.png") no-repeat;
+    text-indent: -9999px; margin-top: 4px;
+}
+
+.end{
+    background: #FDFFBC; overflow: hidden;
+    display: none;
+}
+.end>h1{
+    width: 358px; height: 179px;
+    background: url("../images/black_logo.png") no-repeat;
+    text-indent: -9999px;
+}
+.end>img{
+    display: block; margin: 0 auto;
+}
+.end>.score{
+    width: 107px; height: 27px;
+    background: url("../images/total.png") no-repeat;
+    position: relative; left: 50%; top: -525px; transform: translateX(-50%);
+    padding-top: 34px ; text-align: center;  font-size: 70px;
+    margin-top: 8px;
+    color: #444;
+}
+.end>.restart{
+    width: 105px; height: 23px; border: 0; text-indent: -9999px;
+    background: url("../images//restart.png") no-repeat;
+    position: relative; left: 200px; top: -368px;
+}
